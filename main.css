@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 body {
     background-color: rgb(58, 58, 58);
 }
 
-#choiceheadtxt {
+#OpeningText {
     font-size: 80px;
     font-weight: 900;
-    font-family: 'Ubuntu';
+    font-family: 'Open Sans';
     color: white;
 }
