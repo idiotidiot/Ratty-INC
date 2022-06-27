@@ -1,5 +1,3 @@
-console.log('Made by Bigfoot9999')
-function blank(){
 let inFrame
 
 try {
@@ -11,16 +9,16 @@ try {
 if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank")
     if (!popup || popup.closed) {
-        alert("Popups are disabled!")
+        alert("This will be in your history! Allow popups and redirects to hide this from showing up in your history.")
     } else {
         const doc = popup.document
         const iframe = doc.createElement("iframe")
         const style = iframe.style
         const link = doc.createElement("link")
 
-        doc.title = "Bigfoot's Game Shack"
+        doc.title = "Google Drive"
         link.rel = "icon";
-        link.href = "https://raw.githubusercontent.com/Bigfoot9999/website/main/favicon.ico";
+        link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
         iframe.src = location.href
         style.position = "fixed"
         style.top = style.bottom = style.left = style.right = 0
@@ -31,7 +29,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         location.replace("https://google.com")
     }
 }
-//made by Bigfoot9999
+
 function clockTime(){
     var date = new Date();
     var h = date.getHours(); // 0 - 23
@@ -85,31 +83,3 @@ document.addEventListener('keypress', function (e) {
       doc1.body.appendChild(iframe1);
     }
 });
-}
-
-//detect iframe first
-var txt;
-if (window.frameElement) {
-    console.log("isiframe");
-    //yes i frame SO DONT DO ANYTHING because we already asked
-   
-}
-else {
-    console.log('notIframe');
-    //no iframe we should ask them
-    promptalert();
-}
-
-
-
-//alert
-function promptalert() {
-                if (confirm("Do you want to open this website in an about:blank page? \ Press ok to open website in a blank tab! \ Press Cancel to continue to normal website!")) {
-                    txt = "You pressed OK!";
-                    blank();
-                } 
-                else {
-                    txt = "You pressed Cancel!";
-                }
-                console.log(txt);
-            }
